@@ -29,6 +29,28 @@ Nodeのバージョンは16.0.0以上が必要です。
 フォーマッターはPrettierを導入済み。
 ESLintやStylelintなどのLinter、画像圧縮のプラグイン等は入っていないので必要に応じて適宜インストールする。
 
+```
+project-name
+├── README.md
+├── assets
+│   ├── images
+│   ├── scripts
+│   └── styles
+├── footer.php
+├── functions.php
+├── header.php
+├── index.php
+├── main.js
+├── main.scss
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── screenshot.png
+├── style.css
+├── tailwind.config.cjs
+└── vite.config.js
+```
+
 ### SCSSの利用
 
 CSSファイルでパスを指定するときは次の様に変数を用いる必要があります。
@@ -50,14 +72,12 @@ background: url( $base-dir + 'assets/images/dummy.jpg' );
 
 ### 開発モードの変更
 
-functions.phpにて以下のように設定します：
+functions.phpにて以下のように設定します。
 
-開発モードオン：define( "IS_VITE_DEVELOPMENT", true );
-開発モードオフ：define( "IS_VITE_DEVELOPMENT", false );
+- 開発モードオン：`define( "IS_VITE_DEVELOPMENT", true );`
+- 開発モードオフ：`define( "IS_VITE_DEVELOPMENT", false );`
 
-開発モードでは、main.jsがSCSSファイルを読み込みます。
-
-### 開発モードを使用しない場合
+開発モードでは、`main.js`がSCSSファイルを読み込みます。
 
 開発モードがオフの場合、distディレクトリ内のmain.cssが読み込まれます。SCSSファイルは使用されません。
 
@@ -72,7 +92,7 @@ functions.phpにて以下のように設定します：
 
 ### SCSSとTailwind CSS
 
-Sass(SCSS)とTailwind CSSの両方が使用できるようにしているが、SCSSとTailwind CSSのスタイリングが混在していると、後でコードを確認したときにどちらでスタイルがあたっているか分かりづらいため、主に使用するのはどちらか片方とするのが望ましい。
-ただし、`_base.scss`や`_reset.scss`などのサイト全体に適用するSCSSとTailwind CSSの併用は可とする。
+Sass(SCSS)とTailwind CSSの両方が使用できるようにしているが、SCSSとTailwind CSSのスタイリングが混在していると、後でコードを確認したときにどちらでスタイルがあたっているか分かりづらいため、主に使用するのはどちらか片方とするのが望ましいです。
+ただし、`_base.scss`や`_reset.scss`などのサイト全体に適用するSCSSとTailwind CSSの併用は可とします。
 
-Tailwind CSSを使用しない場合は関連ファイル（`tailwind.config.cjs`や`vite.config.js`内のTailwind CSSに関連する記載）を削除しても良いが、使用していないTailwind CSSのスタイルは本番環境にビルドされないため削除しなくても問題はない。
+Tailwind CSSを使用しない場合は関連ファイル（`tailwind.config.cjs`や`vite.config.js`内のTailwind CSSに関連する記載）を削除しても良いですが、使用していないTailwind CSSのスタイルは本番環境にビルドされないため削除しなくても問題はありません。

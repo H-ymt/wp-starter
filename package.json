@@ -25,6 +25,7 @@
     "prettier": "^3.2.5",
     "sass": "^1.59.3",
     "vite-plugin-live-reload": "^3.0.1",
-    "vite-plugin-sass-glob-import": "^2.0.0"
+    "vite-plugin-sass-glob-import": "^2.0.0",
+    "vite-plugin-webp-and-path": "^0.1.4"
   }
 }

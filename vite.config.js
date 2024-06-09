@@ -6,12 +6,17 @@ import sassGlobImports from "vite-plugin-sass-glob-import"
 import glob from "glob"
 import path from "path"
 import fs from "fs"
+import VitePluginWebpAndPath from "vite-plugin-webp-and-path"
 
 const themePath = "/wp-content/themes/themrishvite"
 const assets = process.env.NODE_ENV === "development" ? "/" : "/dist/"
 
 export default defineConfig({
-  plugins: [liveReload(__dirname + "/**/*.php"), sassGlobImports()],
+  plugins: [
+    liveReload(__dirname + "/**/*.php"),
+    sassGlobImports(),
+    VitePluginWebpAndPath(),
+  ],
   root: "",
   base: process.env.NODE_ENV === "development" ? "./" : "/dist/",
   build: {

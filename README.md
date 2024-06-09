@@ -4,7 +4,6 @@
 
 - [Vite](https://ja.vitejs.dev/)
 - SCSS
-- Tailwind CSS - [Cheat Sheet](https://flowbite.com/tools/tailwind-cheat-sheet/)
 - ECMAScript2018(ES9)
 - [Local](https://localwp.com/)
 
@@ -47,7 +46,6 @@ project-name
 ├── postcss.config.js
 ├── screenshot.png
 ├── style.css
-├── tailwind.config.cjs
 └── vite.config.js
 ```
 
@@ -89,10 +87,3 @@ functions.phpにて以下のように設定します。
 - `dist/`のファイルをサーバーへデプロイします。
 
 ## コーディング時の注意点
-
-### SCSSとTailwind CSS
-
-Sass(SCSS)とTailwind CSSの両方が使用できるようにしていますが、SCSSとTailwind CSSのスタイリングが混在していると、後でコードを確認したときにどちらでスタイルがあたっているか分かりづらいため、主に使用するのはどちらか片方とするのが望ましいです。
-ただし、`_base.scss`や`_reset.scss`などのサイト全体に適用するSCSSとTailwind CSSの併用は可とします。
-
-Tailwind CSSを使用しない場合は関連ファイル（`tailwind.config.cjs`や`vite.config.js`内のTailwind CSSに関連する記載）を削除しても良いですが、使用していないTailwind CSSのスタイルは本番環境にビルドされないため削除しなくても問題はありません。

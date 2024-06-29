@@ -1,16 +1,23 @@
-html {
-	width: 100%;
-	height: 100%;
-	font-family: "Noto Sans JP", sans-serif;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+:root {
+  // Color
+  --c-primary: 37, 37, 260;
+  --c-primary-hover: 34, 34, 218;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #2b2a2a;
 }
 
 body {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }

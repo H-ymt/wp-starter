@@ -1,0 +1,18 @@
+.buttonPrimary {
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  background: var(--c-primary);
+  color: var(--c-white);
+  padding: 12px 24px;
+  width: 100%;
+  display: inline-grid;
+  max-width: 240px;
+  border-radius: 4px;
+  transition: color 0.3s, background 0.3s;
+}
+
+.buttonPrimary:hover {
+  background: var(--c-primary-hover);
+  color: var(--c-white);
+}

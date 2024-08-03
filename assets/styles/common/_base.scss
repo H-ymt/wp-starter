@@ -1,0 +1,46 @@
+:root {
+  --c-base: #2b2a2a;
+  --c-white: #fff;
+  --c-primary: #2555db;
+  --c-primary-hover: #0c48ed;
+  --c-secondary: #9db7f9;
+  --c-link: #174ad7;
+  --c-muted: #9b9b9b;
+
+  --header-height: 80px;
+  --container: 1080px;
+}
+
+@include mq(lg) {
+  :root {
+    --header-height: 64px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  color: #2b2a2a;
+}
+
+body {
+  font-family: 'Noto Sans JP' sans-serif;
+  width: 100%;
+  font-size: 16px;
+  height: 100%;
+}
+
+p {
+  letter-spacing: 0.01em;
+  line-height: 1.8em;
+}
+
+a, a:visited {
+  color: var(--c-link);
+}

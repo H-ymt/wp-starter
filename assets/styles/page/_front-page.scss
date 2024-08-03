@@ -1,0 +1,30 @@
+.fv {
+  text-align: center;
+  text-wrap: balance;
+  padding-block: 80px 64px;
+  display: grid;
+  row-gap: 20px;
+}
+
+.fvTitle {
+  line-height: 1.2;
+  font-size: 60px;
+
+  @include mq(md) {
+    font-size: 40px;
+  }
+}
+
+.fvBody {
+  font-size: 24px;
+
+  @include mq(md) {
+    font-size: 18px;
+  }
+}
+
+.fvButton .buttonPrimary {
+  @include mq(sm) {
+    max-width: 100%;
+  }
+}

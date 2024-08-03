@@ -1,3 +1,13 @@
 .header {
   width: 100%;
+  height: var(--header-height);
+  border-bottom: 1px solid #e9e6e6;
+}
+
+.header__inner {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 32px;
 }

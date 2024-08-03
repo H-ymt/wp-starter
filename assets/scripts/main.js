@@ -1,1 +1,3 @@
-console.log("Hello, World!")
+import "./carousel.js";
+import "./globalMenu.js";
+

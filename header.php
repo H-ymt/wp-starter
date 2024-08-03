@@ -10,4 +10,11 @@
   <?php wp_head(); ?>
 </head>
 
+<header class="header">
+  <div class="header__inner">
+    <div class="logo">Logo</div>
+    <?php get_template_part('include/global-menu'); ?>
+  </div>
+</header>
+
 <body>

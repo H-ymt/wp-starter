@@ -1,0 +1,11 @@
+.footer {
+  padding-block: 64px;
+}
+
+.footer__copyright {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  justify-content: center;
+  color: var(--c-muted);
+}

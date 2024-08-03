@@ -1,0 +1,11 @@
+.globalMenu a {
+  color: var(--c-base);
+  text-decoration: none;
+  padding-inline:12px;
+  line-height: var(--header-height);
+}
+
+.globalMenu a:hover {
+  color: var(--c-link);
+  text-decoration: underline;
+}

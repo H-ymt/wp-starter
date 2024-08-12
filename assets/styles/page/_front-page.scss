@@ -1,25 +1,38 @@
+.home__container {
+  padding-bottom: 5rem;
+}
+
+.home__sectionTitle {
+  padding-bottom: 1.25rem;
+}
+
+.home_contentsWrapper {
+  display: grid;
+  row-gap: 4rem;
+}
+
 .fv {
   text-align: center;
   text-wrap: balance;
-  padding-block: 80px 64px;
+  padding: 5rem 1.5rem 4rem;
   display: grid;
-  row-gap: 20px;
+  row-gap: 1.25rem;
 }
 
 .fvTitle {
   line-height: 1.2;
-  font-size: 60px;
+  font-size: 3.75rem;
 
   @include mq(md) {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 
 .fvBody {
-  font-size: 24px;
+  font-size: 1.5rem;
 
   @include mq(md) {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 
@@ -27,4 +40,29 @@
   @include mq(sm) {
     max-width: 100%;
   }
+}
+
+.featureList {
+  padding-left: 1.25rem;
+  display: grid;
+  row-gap: 1.75rem;
+}
+
+.featureList__item {
+  display: grid;
+  row-gap: 0.25rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.featureList__item ul {
+  padding-left: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.components__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }

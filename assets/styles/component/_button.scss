@@ -1,18 +1,57 @@
-.buttonPrimary {
+.button {
   text-decoration: none;
   cursor: pointer;
   border: none;
-  background: var(--c-primary);
-  color: var(--c-white);
-  padding: 12px 24px;
-  width: 100%;
-  display: inline-grid;
-  max-width: 240px;
-  border-radius: 4px;
-  transition: color 0.3s, background 0.3s;
+  transition:
+    color 0.2s,
+    background 0.2s;
+  letter-spacing: 0.03em;
 }
 
-.buttonPrimary:hover {
+.buttonPrimary {
+  background: var(--c-primary);
+  color: var(--c-white);
+  padding: 0.75rem 1.5rem;
+  width: 100%;
+  display: inline-grid;
+  max-width: 17.5rem;
+  border-radius: 4px;
+  justify-items: center;
+  align-items: center;
+}
+
+.buttonPrimary:hover,
+.buttonPrimary:focus {
   background: var(--c-primary-hover);
+  color: var(--c-white);
+}
+
+.buttonPrimary--lg {
+  padding: 1.125rem 2rem;
+  max-width: 22.5rem;
+}
+
+.buttonPrimary--sm {
+  padding: 1rem;
+  max-width: 15rem;
+}
+
+// Secondary
+.buttonSecondary {
+  color: var(--c-base);
+  background: var(--c-white);
+  padding: 0.75rem 1.5rem;
+  width: 100%;
+  display: inline-grid;
+  max-width: 17.5rem;
+  border-radius: 4px;
+  justify-items: center;
+  border: 1px solid;
+  align-items: center;
+}
+
+.buttonSecondary:hover,
+.buttonSecondary:focus {
+  background: var(--c-base);
   color: var(--c-white);
 }

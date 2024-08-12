@@ -1,9 +1,4 @@
-<footer class="footer">
-  <div class="footer__inner">
-    <p class="footer__copyright">Copyright © 2024. All rights reserved.</p>
-  </div>
-</footer>
-
+<?php echo get_template_part('include/global-footer'); ?>
 <?php wp_footer(); ?>
 </body>
 

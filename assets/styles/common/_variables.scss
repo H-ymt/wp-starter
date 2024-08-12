@@ -1,56 +1,36 @@
-// media queries
-@mixin mq($point) {
-  @if $point == xxl {
-    @media (max-width: 1400px) {
-      @content;
-    }
-  }
+// 三点リーダー
+@mixin line-clamp($num, $num-sp: null) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $num;
+  overflow: hidden;
 
-  @if $point == xl {
-    @media (max-width: 1200px) {
-      @content;
-    }
-  }
-
-  @if $point == lg {
-    @media (max-width: 992px) {
-      @content;
-    }
-  }
-
-  @if $point == md {
-    @media (max-width: 768px) {
-      @content;
-    }
-  }
-
-  @if $point == sm {
-    @media (max-width: 576px) {
-      @content;
+  @if $num-sp {
+    @include sp {
+      -webkit-line-clamp: $num-sp;
     }
   }
 }
 
-@include mq(xxl) {
-}
-
-@include mq(xl) {
-}
-
-@include mq(lg) {
-}
-
-@include mq(md) {
-}
-
-@include mq(sm) {
-}
-
-// hover
+// hover可能なデバイスかつ、クリック可能な要素のみhoverスタイルを適用
 @mixin hover {
   @media (any-hover: hover) {
     &:where(:any-link, :enabled, summary):hover {
       @content;
     }
+  }
+}
+
+// メディアクエリ
+$breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+);
+
+@mixin mq($size) {
+  @media screen and (max-width: #{map-get($breakpoints, $size)}) {
+    @content;
   }
 }

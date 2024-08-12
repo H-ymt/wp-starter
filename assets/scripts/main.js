@@ -1,3 +1,2 @@
-import "./carousel.js";
-import "./globalMenu.js";
-
+import "./carousel.js"
+import "./globalMenu.js"

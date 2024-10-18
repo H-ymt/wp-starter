@@ -11,6 +11,11 @@
 
   --header-height: 80px;
   --container-width: 1080px;
+
+  --rounded-sm: 0.25rem;
+  --rounded-md: 1rem;
+  --rounded-lg: 2rem;
+  --rounded-full: 9999em;
 }
 
 @include mq(lg) {
@@ -33,15 +38,15 @@ html {
 }
 
 body {
-  font-family: "Outfit", sans-serif;
+  font-family: "Inter", "Noto Sans JP", sans-serif;
   width: 100%;
   height: 100%;
   font-size: 1rem;
 }
 
 p {
+  line-height: 1.8;
   letter-spacing: 0.01em;
-  line-height: 1.8em;
 }
 
 :where(a),
@@ -50,7 +55,7 @@ p {
   cursor: pointer;
 }
 
-button {
+:where(button) {
   border: none;
   background: transparent;
   touch-action: manipulation;

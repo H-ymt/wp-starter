@@ -1,17 +1,17 @@
-.home__container {
+.container {
   padding-bottom: 5rem;
 }
 
-.home__sectionTitle {
+.sectionTitle {
   padding-bottom: 1.25rem;
 }
 
-.home_contentsWrapper {
+.home__contentsWrapper {
   display: grid;
   row-gap: 4rem;
 }
 
-.fv {
+.hero {
   text-align: center;
   text-wrap: balance;
   padding: 5rem 1.5rem 4rem;
@@ -19,16 +19,16 @@
   row-gap: 1.25rem;
 }
 
-.fvTitle {
+.hero__title {
   line-height: 1.2;
-  font-size: 3.75rem;
+  font-size: 3rem;
 
   @include mq(md) {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 }
 
-.fvBody {
+.hero__body {
   font-size: 1.5rem;
 
   @include mq(md) {
@@ -36,7 +36,7 @@
   }
 }
 
-.fvButton .buttonPrimary {
+.hero__button .buttonPrimary {
   @include mq(sm) {
     max-width: 100%;
   }

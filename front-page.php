@@ -1,16 +1,16 @@
 <?php get_header(); ?>
-<div class="home__container">
-  <div class="fv">
-    <h1 class="fvTitle">WordPress Starter template with Vite</h1>
-    <p class="fvBody">ViteでWordPressサイトを構築するテンプレート</p>
-    <div class="fvButton">
-      <a href="<?php echo home_url('/sample'); ?>" class="button buttonPrimary buttonPrimary--lg">Smaple Page</a>
+<div class="container">
+  <div class="hero">
+    <h1 class="hero__Title">WordPress Starter template with Vite</h1>
+    <p class="hero__body">ViteでWordPressサイトを構築するテンプレート</p>
+    <div class="hero__button">
+      <a href="<?php echo home_url('/sample'); ?>" class="button button--primary button--lg">Smaple Page</a>
     </div>
   </div>
 
   <div class="home_contentsWrapper">
     <section class="feature container">
-      <h2 class="home__sectionTitle">Feature</h2>
+      <h2 class="sectionTitle">Feature</h2>
       <ul class="featureList">
         <li class="featureList__item">
           Vite
@@ -34,11 +34,11 @@
     </section>
 
     <section class="components container">
-      <h2 class="home__sectionTitle">Components</h2>
+      <h2 class="sectionTitle">Components</h2>
       <div class="components__container">
-        <a href="<?php echo home_url('/sample'); ?>" class="button buttonPrimary buttonPrimary--lg">Large Button</a>
-        <a href="<?php echo home_url('/sample'); ?>" class="button buttonPrimary buttonPrimary--sm">Small Button</a>
-        <a href="<?php echo home_url('/sample'); ?>" class="button buttonSecondary">Secondary Button</a>
+        <a href="<?php echo home_url('/sample'); ?>" class="button button--primary button--lg">Large Button</a>
+        <a href="<?php echo home_url('/sample'); ?>" class="button button--primary button--sm">Small Button</a>
+        <a href="<?php echo home_url('/sample'); ?>" class="button button--secondary button--sm">Secondary Button</a>
       </div>
     </section>
   </div>

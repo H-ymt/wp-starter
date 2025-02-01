@@ -9,10 +9,7 @@ const themePath = "/wp-content/themes/wp-starter"
 const assets = process.env.NODE_ENV === "development" ? "/" : "/dist/"
 
 export default defineConfig({
-  plugins: [
-    liveReload(__dirname + "/**/*.php"),
-    sassGlobImports(),
-  ],
+  plugins: [liveReload(__dirname + "/**/*.php"), sassGlobImports()],
   root: "",
   base: process.env.NODE_ENV === "development" ? "./" : "/dist/",
   build: {
@@ -55,11 +52,6 @@ export default defineConfig({
     },
   },
   css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `$base-dir: '` + themePath + assets + `';` + `@use "assets/styles/common/_variables.scss" as *;`,
-      },
-    },
     postcss: {
       plugins: [postcssNesting, autoprefixer],
     },

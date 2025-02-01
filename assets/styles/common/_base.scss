@@ -1,27 +1,19 @@
 :root {
-  --c-base: #2b2a2a;
-  --c-white: #fff;
-  --c-primary: #2555db;
-  --c-primary-hover: #0e3ab2;
-  --c-secondary: #9db7f9;
-  --c-link: #174ad7;
-  --c-muted: #9b9b9b;
-  --c-background-white: #fff;
-  --c-background-white-muted: #f7f4f4;
-
-  --header-height: 80px;
-  --container-width: 1080px;
-
+  --color-text-base: #2b2a2a;
+  --color-text-white: #fff;
+  --color-primary: #2555db;
+  --color-primary-hover: #0e3ab2;
+  --color-secondary: #9db7f9;
+  --color-link: #174ad7;
+  --color-muted: #9b9b9b;
+  --color-background-white: #fff;
+  --color-background-white-muted: #f7f4f4;
+  --header-height: 5rem;
+  --container-width: 67.5rem;
   --rounded-sm: 0.25rem;
   --rounded-md: 1rem;
   --rounded-lg: 2rem;
   --rounded-full: 9999em;
-}
-
-@include mq(lg) {
-  :root {
-    --header-height: 64px;
-  }
 }
 
 * {
@@ -33,14 +25,14 @@
 html {
   width: 100%;
   height: 100%;
-  color: #2b2a2a;
   font-size: medium;
+  color: var(--color-text-base);
 }
 
 body {
-  font-family: "Inter", "Noto Sans JP", sans-serif;
   width: 100%;
   height: 100%;
+  font-family: Inter, "Noto Sans JP", sans-serif;
   font-size: 1rem;
 }
 
@@ -51,13 +43,13 @@ p {
 
 :where(a),
 :where(a:visited) {
-  color: var(--c-link);
+  color: var(--color-link);
   cursor: pointer;
 }
 
 :where(button) {
-  border: none;
-  background: transparent;
   touch-action: manipulation;
   cursor: pointer;
+  background: transparent;
+  border: none;
 }

@@ -1,7 +1,7 @@
 export function TopCarousel() {
-  console.log("Carousel");
+  console.log("Carousel")
 }
 
 export function SecondCarousel() {
-  console.log("Second Carousel");
+  console.log("Second Carousel")
 }

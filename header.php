@@ -13,9 +13,9 @@
 </head>
 
 <header class="header">
-  <div class="header__inner">
+  <div class="header__inner container">
     <a href="<?php echo home_url(); ?>" class="header__logo">Logo</a>
-    <?php get_template_part('include/global-menu'); ?>
+    <?php get_template_part("include/global-menu"); ?>
   </div>
 </header>
 
